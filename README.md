@@ -23,11 +23,16 @@
 | New Case |  1 - 0 - 0  |    ?    |
 
 Every input will have a weight (positive or negative).
-This implies that an input having a big number of positive weight or a big number of negative weight will influence the resulting output more procedure for the training process
-taking inputs from the training dataset, performing some adjustments based on their weights, and siphoning them via a method that computes the output of the neural net
-compute the back-propogated error rate. in this case it is the difference between neuron's predicted output and the expected output of the training dataset
-based on the extent of the error, perform some minor weight adjustments using the Error Weighted Derivative formula
-iterate this process an arbitrary number of 15000 times, every iteration the whole training set is processed simultaneously
+This implies that an input having a big number of positive weight or a big number of negative weight will influence the resulting output more.
+
+Procedure for the training process:
+- taking inputs from the training dataset
+- performing some adjustments based on their weights, and siphoning them via a method that computes the output of the neural net
+
+- compute the back-propogated error rate. in this case it is the difference between neuron's predicted output and the expected output of the training dataset
+- based on the extent of the error, perform some minor weight adjustments using the Error Weighted Derivative formula
+- iterate this process an arbitrary number of 15000 times, every iteration the whole training set is processed simultaneously
+
 
 - `exp`    - for generating the natural exponential
 - `array`  - for generating a matrix
